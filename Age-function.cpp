@@ -6,7 +6,7 @@ void farshad(int a, int b, int c)
 {
 	int yy = (1400 - a);
 	int mm = (12 - b);
-	int dd;
+	int dd=0;
 	if (b >= 1 && b <= 6)
 	{
 		dd = (31 - c);
@@ -16,7 +16,7 @@ void farshad(int a, int b, int c)
 		dd = (30 - c);
 	}
 	else {
-		dd = (31 - c);
+		dd = (29 - c);
 	}
 	cout << "You have " << yy << " years and " << mm << " month " << dd << " days" << endl;
 }
@@ -55,6 +55,4 @@ int main()
 				} while (d <= 0 || m > 31);
 
 				farshad(y, m, d);
-
-
 }
